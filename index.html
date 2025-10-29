@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Parking System</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h1>🚗 Smart Parking Space Detection</h1>
+  <p>Live Video Feed:</p>
+
+  <div>
+    <img src="{{ url_for('video') }}" width="800">
+  </div>
+
+  <p id="statusText"></p>
+
+  <script>
+    async function getStatus() {
+      const res = await fetch('/status');
+      const data = await res.json();
+      document.getElementById("statusText").innerText = data.message;
+    }
+
+    getStatus();
+  </script>
+</body>
+</html>
