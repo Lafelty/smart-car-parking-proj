@@ -25,7 +25,7 @@ To install and run this project, follow these steps:
     ├── CarParkPos
     ├── main.py (anyname you want)
     └── ParkingSpacePicker.py
-3. **How to run and make all the devices that use the same internet**
+3. **How to run and make all the devices that use the same internet able to access the web app**
    ```bash
    in Command Prompt
    //cd to your folder EX: (cd Desktop\project-root)
