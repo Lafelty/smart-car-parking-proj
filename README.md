@@ -8,7 +8,7 @@ To install and run this project, follow these steps:
 
 ### Steps
 
-1.  **Install needed pip**
+1.  **Install needed pip in your code runner**
     ```bash
     pip install flask
     pip install opencv-python
