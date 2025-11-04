@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+  <h1>🚗 Smart Parking System</h1>
+  <p class="subtitle">Real-time Parking Space Detection & Monitoring</p>
+
+  <div class="stats-bar">
+    <div class="stat-card"><div class="stat-number" id="availableSpaces">--</div><div class="stat-label">Available</div></div>
+    <div class="stat-card"><div class="stat-number" id="occupiedSpaces">--</div><div class="stat-label">Occupied</div></div>
+    <div class="stat-card"><div class="stat-number" id="totalSpaces">--</div><div class="stat-label">Total Spaces</div></div>
+  </div>
+
+  <div class="image-container">
+    <div class="status-badge" id="statusBadge">● LIVE</div>
+    <img src="{{ url_for('video') }}" alt="Live Parking Feed">
+  </div>
+
+  <p id="statusText" style="margin-top:20px;color:#4a5568;font-size:1.1rem;font-weight:500;"></p>
+  <button class="refresh-btn" onclick="location.reload()">↻ Refresh Feed</button>
+</div>
+
+<footer><p>© 2025 Smart Parking System | Live Monitoring Active</p></footer>
+{% endblock %}

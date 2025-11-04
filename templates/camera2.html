@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+  <h1>Camera 2 — Alternate View</h1>
+  <div class="image-container">
+    <div class="status-badge">● LIVE</div>
+    <img src="{{ url_for('video2') }}" alt="Camera 2 Feed">
+  </div>
+</div>
+{% endblock %}
