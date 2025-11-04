@@ -21,6 +21,9 @@ To install and run this project, follow these steps:
     │   └── style.css
     ├── templates/
     │   └── index.html
+    │   └── base.html
+    │   └── camera2.html
+    │   └── about.html
     ├── carParkImg.png (your parking space img)
     ├── CarParkPos
     ├── main.py (anyname you want)
