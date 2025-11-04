@@ -14,6 +14,7 @@ To install and run this project, follow these steps:
     pip install opencv-python
     pip install cvzone
     pip install numpy
+    pip install flask_sqlalchemy
 2. **File structure**
    ```bash
    project-root/
